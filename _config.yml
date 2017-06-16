@@ -23,6 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://sonoradevs.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: sonoradevs
 #github_username:  sonoradevs
+facebook_username: SonoraDevs-171774340026673
 
 # Build settings
 markdown: kramdown
