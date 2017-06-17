@@ -4,34 +4,46 @@ layout: default
 
 <div class="home">
 
-  <div class="large-12 columns">
-    <ul>
-      
-      {% for post in site.posts %}
-        
-        <li>
-          {% if post.categories contains 'link' %}
-            {% assign anchor_href = post.external_url %}
-            <span class="label primary">
-              <span class="typcn typcn-link"></span> link
-            </span>
-          {% else %}
-            {% assign anchor_href = post.url | relative_url %}
-            <span class="label warning">
-              <span class="typcn typcn-pencil"></span> blog
-            </span>
-          {% endif %}
+    <div class="columns">
 
-          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <a href="{{ anchor_href }}">{{ post.title | escape }}</a>
-        </li>
-      
-      {% endfor %}
+        <div class="large-12">
+            <ul class="news no-style">
 
-    </ul>
-  </div>
-  
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+                {% for post in site.posts %}
+
+                    <li>
+                        {% if post.categories contains 'link' %}
+                            {% assign anchor_href = post.external_url %}
+                            <span class="label primary">
+                                <span class="typcn typcn-link"></span> link
+                            </span>
+                            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                            <span class="post-meta">{{ post.date | date: date_format }}</span>
+                            <a href="{{ anchor_href }}" target="_blank">{{ post.title | escape }}</a>
+                        {% else %}
+                            {% assign anchor_href = post.url | relative_url %}
+                            <span class="label warning">
+                                <span class="typcn typcn-pencil"></span> blog
+                            </span>
+                            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                            <span class="post-meta">{{ post.date | date: date_format }}</span>
+                            <a href="{{ anchor_href }}">{{ post.title | escape }}</a>
+                        {% endif %}
+
+                        {% if post.publisher %}
+                            <span class="muted">({{post.publisher}})</span>
+                        {% endif %}
+                    </li>
+
+                {% endfor %}
+
+            </ul>
+        </div>
+
+        <hr>
+
+        <p class="rss-subscribe"><span class="typcn typcn-rss"></span> Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+    </div>
 
 </div>
