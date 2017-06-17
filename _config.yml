@@ -24,6 +24,7 @@ url: "http://sonoradevs.com" # the base hostname & protocol for your site, e.g. 
 twitter_username: sonoradevs
 #github_username:  sonoradevs
 facebook_username: SonoraDevs-171774340026673
+google_analytics: UA-90556457-2
 
 # Build settings
 markdown: kramdown
