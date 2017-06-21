@@ -4,29 +4,67 @@
 
 @import "minima";
 
+$primaryColor: #ee8700;
+$primaryLightColor: #ffb655;
+$secondaryColor: #64c37d;
+$secondaryLightColor: #a4e276;
+$almostWhite: #f4f4f4;
+
+html, body {
+  color: #666;
+}
+
 .top-bar {
-    margin-bottom: 1em;
+  background-color: $almostWhite;
+  margin-bottom: 1em;
+}
+
+.logo {
+  width: 28px;
 }
 
 .container {
-    max-width: 960px;
-    margin: 0 auto;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .muted {
-    color: gray;
-    font-size: 90%;
+  color: gray;
+  font-size: 90%;
 }
 
 ul.no-style {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    li {
-        list-style: none;
-    }
+  li {
+    list-style: none;
+  }
 }
 
 hr {
-    margin: 1em 0;
+  margin: 1em 0;
+}
+
+a {
+  color: $primaryColor;
+
+  &:visited {
+    color: $primaryColor;
+  }
+}
+
+span.label {
+  &.primary {
+    background-color: $secondaryColor;
+  }
+  &.warning {
+    background-color: $secondaryLightColor;
+  }
+}
+
+footer.callout.secondary {
+  background-color: $almostWhite;
+  border: none;
+  color: #666;
 }

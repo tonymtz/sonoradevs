@@ -6,6 +6,7 @@
       {% assign default_paths = site.pages | map: "path" %}
       {% assign page_paths = site.header_pages | default: default_paths %}
       <a href="{{ "/" | relative_url }}">
+        <img class="logo" src="{{ "/assets/logo.svg" | relative_url }}" alt="sonora devs logo">
         <strong>{{ site.title | escape }}</strong>
       </a>
     </div>
