@@ -5,5 +5,5 @@ date:   2018-01-19 23:46:22 -0700
 categories:
 - link
 external_url: "https://itunes.apple.com/us/app/hmoman-run-a-racing-game/id1336687974?mt=8"
-publisher: Unity User Group HMO - Carlos Castro
+publisher: Unity User Group HMO
 ---
