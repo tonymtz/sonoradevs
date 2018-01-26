@@ -47,14 +47,14 @@ Play it now!
 Media Coverage
 --
 
-Hermografía - Media/News Company
+Hermografía - Media/News Company in Hermosillo, México.
 - [Digital post](https://www.facebook.com/hermografia/photos/a.591215937705062.1073741828.574631489363507/889557261204260/?type=3&theater)
 
-UniradioNoticias.com - News website localed in Hermosillo, México.
+UniradioNoticias.com - News website located in Hermosillo, México and local radio program.
 - [Facebook post](https://www.facebook.com/noticiashermosillo/posts/1792272407502957)
 - [Videojuego sobre baches de Hermosillo](http://www.uniradionoticias.com/entrevistasdestacadas/entrevista3717.html)
 
-Azteca Sonora - Media/News Company in Hermosillo, Sonora.
+Azteca Sonora - Media/News Company in Hermosillo, Sonora and local tv channel.
 - [Video](https://www.facebook.com/AztecaSonora/videos/1172405142863171/)
 
 
